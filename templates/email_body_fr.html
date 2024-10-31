@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .content {
+            font-size: 1em;
+            text-align: justify;
+        }
+        .content p {
+            margin-bottom: 1em;
+        }
+        .content p.bold {
+            font-weight: bold;
+        }
+        .content p.center {
+            text-align: center;
+        }
+        .content a {
+            display: inline-block;
+            padding: 0.5em 1em;
+            background-color: #004080;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p class="bold">{{ civilite }},</p>
+        <p>Nous vous remercions pour votre inscription à participer à la 7ème édition du
+            Forum Galien Afrique prévue du 22 au 25 octobre 2024 à l’hôtel King Fahd Palace, à Dakar (Sénégal).</p>
+        <p>Vous avez, en attaché, votre lettre d’invitation ainsi que l’agenda, la note conceptuelle et votre badge électronique.</p>
+        <p>Vous pouvez cliquer sur le bouton ci-dessous si vous souhaitez apporter des
+            modifications à votre participation et accéder aux dernières mises à jour.</p>
+        <p class="center"><a href="https://inscription.forumgalienafrique.com/inscription?ref={{ reference }}">Modifier votre inscription</a></p>
+        <p>Cordiales salutations,</p>
+        <p>Equipe du comité d’organisation<br>7ème édition du Forum Galien Afrique</p>
+    </div>
+</body>
+</html>

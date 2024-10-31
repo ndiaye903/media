@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .content {
+            font-size: 1em;
+            text-align: justify;
+        }
+        .content p {
+            margin-bottom: 1em;
+        }
+        .content p.bold {
+            font-weight: bold;
+        }
+        .content p.center {
+            text-align: center;
+        }
+        .content a {
+            display: inline-block;
+            padding: 0.5em 1em;
+            background-color: #004080;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p class="bold">{{ civilite }},</p>
+        <p>
+            We thank you for your registration to participate in the 7th edition of the Galien Forum and
+            the 4th edition of the Prix Galien Africa scheduled from October 22 to 25, 2024 at the King 
+            Fahd Palace hotel, in Dakar (Senegal). 
+        </p>
+        <p>Find attached your badge, your invitation letter, the synoptic agenda and the concept note.</p>
+        <p>
+            You can click the button below if you would like to make changes to your entry and access 
+            the latest updates.
+        </p>
+        <p class="center"><a href="https://inscription.forumgalienafrique.com/inscription?ref={{ reference }}">Edit your registration</a></p>
+        <p>Kind regards,</p>
+        <p>Galien Forum Africa & Prix Galien Africa<br>Organizing commitee team</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Acknowledgments</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+        }
+        .header img {
+            position: relative;
+            top: -4.7em;
+            right: 0;
+            left: -4.7em;
+            height: 9em; /* Ajustez la hauteur selon vos besoins */
+            width: 50em;
+        }
+        .content {
+            position: absolute;
+            font-size:1.1em ;
+            text-align: justify;
+        }
+        .content img{
+            position: absolute;
+            width: 15.5em;
+            height: 12.5em;
+            margin-left: 20em;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center; /* Alignement à gauche pour la signature */
+            padding: 1em;
+            font-size: 0.7em;
+        }
+     
+    </style>
+    {% load static %}
+    <div class="header">
+        <img src="{% static 'entete.jpg' %}" alt="entete">
+        
+    </div>
+    <div style="margin-left: 25em;">
+        Dakar, le {% now "j F Y " %}<br>
+        {{ prenom_nom }}<br>
+        {{ fonction }}<br>
+        {{ structure }}<br>
+    </div>
+</head>
+<body>
+
+    <div class="content">
+        <p style="font-weight: bold;"> <span style="text-decoration: underline;">Subject</span> : Acknowledgments</p>
+        <p style="font-weight: bold;">{{prenom_nom}},</p>
+        <p>
+            I would like to express my deep gratitude and thanks for responding favorably to our partnership offer for 
+            the organization of the 2024 edition of the Galien Africa Forum and Prize, held from October 22 to 25, 2024 
+            in Dakar (Senegal).
+        </p>
+        <p>
+            You have greatly contributed to the success of these high-level events which notably saw the participation of 
+            eminent figures in global health. Please be warmly thanked. 
+        </p>
+        <p>These thanks also go to your team who facilitated the realization of our partnership. </p>
+        <p>Please accept, <span style="font-weight: bold;">{{civilite}}</span>, the assurance of my distinguished consideration.</p>
+        <img style="position: absolute;" src="{% static 'tamponFga.jpeg' %}" alt="tampon">
+
+        <p style="margin-top: 4em;">
+            Prof Awa Marie Coll Seck<br>
+            President of the Galien Africa Association
+        </p>
+    </div>
+    <div class="footer">
+    <p style="
+            border-top-style: solid;
+            border-width: 2px;;
+        ">
+        ASSOCIATION GALIEN AFRICA (AGA), Récépissé Nº. : 020504/MINT/DGAT/DLPL/DAPA du 31 août 2021<br>
+        N.I.N.E.A : 009603110 / <span style="font-weight: bold;">Téléphone : +221 33 856 64 99</span> - Email: secretariat@forumgalienafrique.com
+    </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Invitation</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+        }
+        .header img {
+            position: relative;
+            top: -4.7em;
+            right: 0;
+            left: -4.7em;
+            height: 9em; /* Ajustez la hauteur selon vos besoins */
+            width: 50em;
+        }
+        .content {
+            position: absolute;
+            font-size:1em ;
+            text-align: justify;
+        }
+        .content img{
+            position: absolute;
+            width: 15.5em;
+            height: 12.5em;
+            margin-left: 24em;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center; /* Alignement à gauche pour la signature */
+            padding: 1em;
+            font-size: 0.7em;
+        }
+     
+    </style>
+    {% load static %}
+    <div class="header">
+        <img src="{% static 'entete.jpg' %}" alt="entete">
+        
+    </div>
+    <div style="margin-left: 25em; margin-top: -3em;">
+        Dakar, le {% now "j F Y " %}<br>
+        {{ prenom_nom }}<br>
+        {{ fonction }}<br>
+        {{ structure }}<br>
+    </div>
+</head>
+<body>
+
+    <div class="content">
+     
+        <p style="font-weight: bold;"> 
+            <span style="text-decoration: underline;">Subject</span> : Invitation to the 7th edition of the Galien Forum Africa & 
+            to the 4th edition of the Prix Galien Africa
+        </p>
+     
+        <p style="font-weight: bold;">{{prenom_nom}},</p>
+        <p>
+            Galien Africa is organizing the 7th edition of the Galien Forum Africa, from October 22nd to 
+            25th, 2024 at the King Fahd Palace Conference Center, in Dakar (Senegal), on the main theme: 
+            <span style="font-weight: bold;">« Health and community actions under climate and environmental crisis in Africa »</span>
+            On Friday, October 25, 2024, the Prix Galien Africa will be awarded in recognition of excellence and innovation.  
+        </p>
+        <p>
+            These high-level events (Youth Forum, Women's Forum, Scientific Forum) will provide a 
+            platform for exchange with the participation of Nobel Prize winners, political leaders, experts, 
+            researchers, students, doctors, biologists, socio-anthropologists, community players, innovators, 
+            investors, international organizations, civil society, private sector and others.
+        </p>
+        <p>
+            We would be delighted to count you among our prestigious guests.  
+        </p>
+        <p>
+            We look forward to hearing from you soon, and are attached your electronic badge, the concept note and the synoptic agenda.
+        </p>
+        <p>
+            We remain at your disposal if you require any further information.
+        </p>
+        <p>
+            Yours sincerely,
+        </p>
+        <img style="position: absolute;" src="{% static 'tamponFga.jpeg' %}" alt="tampon">
+        <p style="margin-top: 4em;">
+            Profesor Awa Marie Coll Seck</br>
+            Chair of Galien Africa
+        </p>
+    </div>
+    <div class="footer">
+    <p style="
+            border-top-style: solid;
+            border-width: 2px;;
+        ">
+        ASSOCIATION GALIEN AFRICA (AGA),lots 166 / 168, Lotissement Ipres, Socabeg Ngor - Almadies (Derrière
+        Station Eydon) N.I.N.E.A : 009603110 Récépissé Nº. : 020504/MINT/DGAT/DLPL/DAPA Tél.: +221 338566499 - Email: secretariat@forumgalienafrique.com
+    </p>
+</div>
+</body>
+</html>
